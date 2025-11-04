@@ -88,8 +88,8 @@ pub mod kamino_lending {
         handler_socialize_loss::process_v1(ctx, liquidity_amount)
     }
 
-    pub fn socialize_loss_v2(ctx: Context<SocializeLossV2>, liquidity_amount: u64) -> Result<()> {
-        handler_socialize_loss::process_v2(ctx, liquidity_amount)
+    pub fn socialize_loss_v2(ctxss: Context<SocializeLossV2>, liquidity_amount: u64) -> Result<()> {
+        handler_socialize_loss::process_v2(ctxss, liquidity_amount)
     }
 
     pub fn mark_obligation_for_deleveraging(
